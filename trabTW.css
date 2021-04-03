@@ -1,0 +1,419 @@
+html,body{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+}
+.container{
+    width: 70vw;
+    height: 85vh;
+    display: inline-block;
+    position: absolute;
+}
+.game{
+    width: 50vw;
+    height: 73vh;
+    display: inline-block;
+    position: absolute;
+    left:17.5vw;
+    top:6vh;
+}
+.main{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Marker Felt, fantasy;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    border: none;
+    height: 77vh;
+}
+#turn{
+    background: #000;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+.score{
+    display: flex;
+    justify-content: space-between;
+    visibility:hidden;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 5px;
+    color: white;
+    margin-top: 2px;
+    text-align: center;
+    font-family: Marker Felt, fantasy;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-style: oblique;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    height: auto;
+}
+.other{
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 5px;
+    color: white;
+    margin-top: 2px;
+    text-align: center;
+    font-family: Marker Felt, fantasy;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-style: oblique;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    height: auto;
+    display: block;
+}
+.otherb{
+    border: 2px solid white;
+    color: white;
+    margin-top: 2px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    height: auto;
+    display:none;
+}
+#black, #white, #empty{
+    padding: 10px;
+    width:auto;
+    border: 1px solid #000;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 6px;
+}
+#black{
+    text-align: center;
+    font-family: Marker Felt, fantasy;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+#white{
+    text-align: center;
+    color: white;
+    font-family: Marker Felt, fantasy;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    background: #fff;
+    border: 1px solid #000;
+}
+#empty{
+    text-align: center;
+    font-family: Marker Felt, fantasy;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    background: green;
+    border: 1px solid #000;
+}
+table{
+    background: green;
+    border-collapse: collapse;
+}
+table tr td{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #fff;
+}
+table tr td span{
+    width: 70px;
+    height: 70px;
+    visibility: hidden;
+    display: block;
+    margin: 0 5px 0 5px;
+    border-radius: 50%;
+    position: flex;
+}
+.instructions{
+    width: 100%;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Marker Felt, fantasy;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: none;
+    padding: 6px;
+    position: relative;
+    transition: all 1s;
+    cursor: pointer;
+}
+.instruct{
+    width: 100%;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Marker Felt, fantasy;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    display: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: none;
+    position: relative;
+}
+.instructb{
+    width: 100%;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Marker Felt, fantasy;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    display: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: none;
+    padding: 6px;
+    position: relative;
+    transition: all 1s;
+    cursor: pointer;
+}
+.endgame{
+    width: 100%;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Marker Felt, fantasy;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    display: none;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: none;
+    padding: 6px;
+    position: relative;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.titulo {
+text-align: center;
+font-family: Marker Felt, fantasy;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+font-style: oblique;
+font-size: 20px;
+font-weight: bold;
+color: white;
+}
+
+.menu {
+width: 28vw;
+height: 85vh;
+margin: 0;
+border: 2px solid white;
+border-radius: 6px;
+margin-right: 5px;
+padding: 5px;
+float: left;
+left: 0;
+position: absolute;
+display: block;
+}
+
+
+.login {
+text-align: center;
+font-family: sans-serif;
+font-size: auto;
+border: 2px solid white;
+border-radius: 6px;
+padding: 8px;
+color: white;
+}
+
+.play {
+border: 2px solid white;
+border-radius: 6px;
+padding: 5px;
+color: white;
+margin-top: 2px;
+text-align: center;
+font-family: Marker Felt, fantasy;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+font-style: oblique;
+font-size: 20px;
+font-weight: bold;
+color: white;
+height: auto;
+}
+
+.instructb {
+width: 100%;
+border-radius: 6px;
+text-align: center;
+font-size: 20px;
+font-family: Marker Felt, fantasy;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+color: white;
+display: none;
+margin-top: 2%;
+margin-bottom: 2%;
+border: none;
+padding: 6px;
+position: relative;
+transition: all 1s;
+cursor: pointer;
+}
+
+.buttonb {
+width: 99%;
+text-align: center;
+font-size: 15px;
+font-family: Marker Felt, fantasy;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+color: white;
+display: block;
+margin-top: 2%;
+margin-bottom: 2%;
+border: none;
+position: relative;
+transition: all 1s;
+cursor: pointer;
+
+}
+
+.button {
+width: 100%;
+border-radius: 6px;
+text-align: center;
+font-size: 20px;
+font-family: Marker Felt, fantasy;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+color: white;
+display: block;
+margin-top: 2%;
+margin-bottom: 2%;
+border: none;
+padding: 6px;
+position: relative;
+transition: all 1s;
+cursor: pointer;
+}
+
+.result {
+text-align: center;
+font-family: Marker Felt, fantasy;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+font-size: auto;
+font-weight: bold;
+border: 2px solid white;
+border-radius: 6px;
+  padding: 5px;
+  color: white;
+  margin-top: 2px;
+}
+
+.display {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 85vh;
+  justify-content: center;
+}
+
+.pl {
+  padding: 5px;
+  text-align: center;
+  font-family: Marker Felt, fantasy;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
+}
+
+.resultplay {
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 4px;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.areajogo {
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 5px;
+  color: white;
+  width: 70vw;
+  height: 85vh;
+  float: right;
+  right:0px;
+  margin: 0 auto;
+  position: absolute;
+  display: none;
+}
+
+.b {
+    display: none;
+    width: 100%;
+    border-radius: 6px;
+    text-align: center;url(fundo.jpg)
+    font-size: 20px;
+    font-family: Marker Felt, fantasy;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: none;
+    padding: 6px;
+    position: relative;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.classificacao{
+    width:100%;
+    height:87vh;
+    background-color: black;
+    position: absolute;
+    display: none;
+    opacity: 0.8;
+}
+
+.offline{
+    width:50%;
+    height:88%;
+    background-color:black;
+    position:absolute;bottom
+    display: inline-block;
+}
+.online{
+    width:50%;
+    height:88%;
+    background-color: black;
+    position: absolute;
+    display: inline-block;
+    right:0px;
+}
+
+input {
+  border-radius: 6px;
+  margin: 2px;
+  font-family: Arial;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
+}
+
+p {
+  font-family: "Avantgard", TeX Gyre Adventor, URW Gothic L, sans-serif;
+  color: white;
+  font-size: 18px;
+}
+
+body{
+  /*background-image: url(fundo.jpg);*/
+  background-image: url(https://t4.ftcdn.net/jpg/01/29/53/47/240_F_129534739_CTR475IuoFecHhNixAr6TUzlkqEhvxwx.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}

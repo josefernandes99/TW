@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Othello</title>
+    <link rel="stylesheet" href="trabTW.css">
+</head>
+<body>
+    <div class="titulo">
+        <h1><b>OTHELLO</b></h1>
+        <hr>
+    </div>
+    <div class="display">
+        <div class="menu">
+            <div class="login">
+                <input class="buttonb" type="text" placeholder="Username" id="username" name="uname">
+                <input class="buttonb" type="password" placeholder="Password" id="password" name="psw">
+                <button class="button" id="login">Login</button>
+                <div class="instruct" id="welcome"></div>
+                <button class="instructb" id="logout">Logout</button>
+            </div>
+            <div class="play">
+                <div class="instruct" id="firsttoplay"><span>Player1 is</span></div>
+                <button class="instructb" id="bblack"><span>Black</span></button>
+                <button class="instructb" id="bwhite"><span>White</span></button>
+                <button class="instructb" id="start1"><span>1 vs PC</span></button>
+                <button class="instructb" id="start2"><span>1 vs 1</span></button>
+                <button class="instructb" id="difficulty"><span>Difficulty</span></button>
+                <button class="instructb" id="restart"><span>Restart</span></button>
+                <button class="instructb" id="exit"><span>Exit</span></button>
+                <button class="instructb" id="easy"><span>Easy</span></button>
+                <button class="instructb" id="medium"><span>Medium</span></button>
+                <button class="instructb" id="hard"><span>Hard</span></button>
+            </div>
+            <div class="score" id="score">
+                <div id="black"></div>
+                <div id="white"></div>
+                <div id="empty"></div>
+            </div>
+            <div id="other" class="other">
+                <button class="button" id="scores"><span>Scores</span></button>
+                <button class="button" id="instructions"><span>Instructions</span></button>
+                <div class="otherb" id="instruct">Othello is a strategy board game for two players (Black and White), played on an 8 by 8 board. The game traditionally begins with four discs placed in the middle of the board as shown below. Black moves first. Black must place a black disc on the board, in such a way that there is at least one straight (horizontal, vertical, or diagonal) occupied line between the new disc and another black disc, with one or more contiguous white pieces between them. In the starting position, Black has the following 4 options indicated by translucent discs. After placing the disc, Black flips all white discs lying on a straight line between the new disc and any existing black discs. All flipped discs are now black. If Black decides to place a disc in the topmost location, one white disc gets flipped. Now White plays. This player operates under the same rules, with the roles reversed: White lays down a white disc, causing black discs to flip. Players alternate taking turns. If a player does not have any valid moves, play passes back to the other player. When neither player can move, the game ends. A game of Othello may end before the board is completely filled. The player with the most discs on the board at the end of the game wins. If both players have the same number of discs, then the game is a draw.
+                </div>
+                <button class="instructb" id="instructb"><span>Ok</span></button>
+            </div>
+        </div>
+        <div class="areajogo" id="areajogo">
+            <div class="container">
+                <div class="main">
+                    <div id="turn"></div>
+                    <div class="game" id="game"></div>
+                </div>
+                <button class="instructb" id="giveup"><span>Give Up</span></button>
+            </div>
+        </div>
+        <div class="classificacao" id="classificacao">
+            <div class="offline" id="offline">1 vs PC</div>
+            <div class="online" id="online">1 vs 1</div>
+            <button class="instructb" id="scorebutton"><span>Ok</span></button>
+        </div>
+    </div>
+    <script src="trabTW.js"></script>
+    <script>
+    </script>
+
+</body>
+</html>
